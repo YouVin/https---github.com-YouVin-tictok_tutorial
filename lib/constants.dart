@@ -4,12 +4,13 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:tictok_tutorial/controllers/auth_controller.dart';
 import 'package:tictok_tutorial/views/screens/add_video_screen.dart';
+import 'package:tictok_tutorial/views/screens/search_screen.dart';
 import 'package:tictok_tutorial/views/screens/video_screen.dart';
 
 //홈화면 인덱스
 List pages = [
   VideoScreen(),
-  Text('Search Screen'),
+  const SearchScreen(),
   const AddVideoScreen(),
   Text('Messages Screen'),
   Text('Profile Screen'),

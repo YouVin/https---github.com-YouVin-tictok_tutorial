@@ -25,4 +25,21 @@ class VideoController extends GetxController {
       ),
     );
   }
+
+  //비디오 좋아요 설정 ----------------------------------------------------
+  likeVideo(String id) async {
+    //파이어스토어 컬렉션 도스에 정보 불러오기 -------------------------------
+    DocumentSnapshot doc = await firestore.collection('videos').doc(id).get();
+    var uid = authController.user.uid;
+    //좋아요 누를시 파이어스토어 업데이트 볼륨값 지우고, 넣기
+    if ((doc.data()! as dynamic)['likes'].contains(uid)) {
+      await firestore.collection('videos').doc(id).update({
+        'likes': FieldValue.arrayRemove([uid]),
+      });
+    } else {
+      await firestore.collection('videos').doc(id).update({
+        'likes': FieldValue.arrayUnion([uid]),
+      });
+    }
+  }
 }

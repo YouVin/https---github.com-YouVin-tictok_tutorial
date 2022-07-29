@@ -18,7 +18,6 @@ class _CircleAnimationState extends State<CircleAnimation>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller = AnimationController(
       vsync: this,

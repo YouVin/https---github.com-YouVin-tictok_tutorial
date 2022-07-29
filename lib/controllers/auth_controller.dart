@@ -15,6 +15,8 @@ class AuthController extends GetxController {
   late Rx<File?> _pickedImage;
   //fire base signup_screen 권한 연결-----------------------------
   File? get profilePhoto => _pickedImage.value;
+  //사용자 가져오기
+  User get user => _user.value!;
 
   @override
   void onReady() {
