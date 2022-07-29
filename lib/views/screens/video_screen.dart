@@ -5,7 +5,6 @@ import 'package:tictok_tutorial/controllers/video_controller.dart';
 import 'package:tictok_tutorial/views/screens/comment_screen.dart';
 import 'package:tictok_tutorial/views/widgets/circle_animation.dart';
 import 'package:tictok_tutorial/views/widgets/video_player_item.dart';
-import 'package:video_player/video_player.dart';
 
 //업로드한 비디오 홈화면에 게시 --------------------------------------------------
 class VideoScreen extends StatelessWidget {
@@ -52,7 +51,7 @@ class VideoScreen extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(11),
+            padding: const EdgeInsets.all(11),
             height: 50,
             width: 50,
             decoration: BoxDecoration(

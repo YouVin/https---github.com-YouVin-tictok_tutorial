@@ -10,7 +10,7 @@ import 'package:tictok_tutorial/views/screens/video_screen.dart';
 //홈화면 인덱스
 List pages = [
   VideoScreen(),
-  const SearchScreen(),
+  SearchScreen(),
   const AddVideoScreen(),
   Text('Messages Screen'),
   Text('Profile Screen'),

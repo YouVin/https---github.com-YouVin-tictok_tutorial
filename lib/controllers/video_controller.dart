@@ -9,7 +9,6 @@ class VideoController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
     _videoList.bindStream(
       firestore.collection('videos').snapshots().map(

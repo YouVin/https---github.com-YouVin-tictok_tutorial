@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tictok_tutorial/constants.dart';
 import 'package:tictok_tutorial/controllers/auth_controller.dart';
-import 'package:tictok_tutorial/views/screens/auth/login_screen.dart';
 import 'package:tictok_tutorial/views/screens/auth/signup_screen.dart';
 
 void main() async {
