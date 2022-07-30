@@ -161,9 +161,12 @@ class SignupScreen extends StatelessWidget {
                 ),
                 //Login 버튼 클릭스 출력 기능. ---------------------------------
                 InkWell(
-                  onTap: () {
-                    Get.to(() => LoginScreen());
-                  },
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => LoginScreen(),
+                    ),
+                  ),
+
                   // login 글씨 디자인 -----------------------------------------
                   child: Text(
                     //Resgiser 스타일
